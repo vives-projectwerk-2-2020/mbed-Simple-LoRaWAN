@@ -180,6 +180,16 @@ namespace SimpleLoRaWAN
     }
 }
 
+void Node::cold_start()
+{
+  radio.sleep();
+}
+
+void Node::warm_start()
+{
+  radio.standby();
+}
+
 void Node::processEvents()
 {
   // make your event queue dispatching events forever

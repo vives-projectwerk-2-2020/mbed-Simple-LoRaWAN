@@ -56,6 +56,9 @@ public:
 
     void enableAdaptiveDataRate();
 
+    void cold_start();
+    void warm_start();
+
 private:
 
     events::EventQueue ev_queue;
